@@ -14,7 +14,7 @@ public class Produto {
         this.quantidade = quantidade;
     }
 
-    public void setPreco(int preco){
+    public void setPreco(double preco){
         this.preco = preco;
     }
 
@@ -30,4 +30,11 @@ public class Produto {
         return preco;
     }
 
+    public double valorTotalEmEstoque(){
+        return quantidade * preco;
+    }
+
+    public double desconto(double porcentagem){
+        return porcentagem * this.preco;
+    }
 }

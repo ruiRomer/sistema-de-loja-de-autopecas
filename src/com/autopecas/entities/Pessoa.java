@@ -4,7 +4,7 @@ public class Pessoa {
 
     private String nome;
     private String endereco;
-    private int cpf;
+    private long cpf;
 
     public void setNome(String nome){
         this.nome = nome;
@@ -22,11 +22,11 @@ public class Pessoa {
         return endereco;
     }
 
-    public void setCpf(int cpf){
+    public void setCpf(long cpf){
         this.cpf = cpf;
     }
 
-    public int getCpf(){
+    public long getCpf(){
         return cpf;
     }
 }
