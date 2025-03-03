@@ -6,6 +6,18 @@ public class Produto {
     private int quantidade;
     private double preco;
 
+    public void init(String nome, int quantidade, double preco){
+        this.nome = nome;
+        this.quantidade = quantidade;
+        this.preco = preco;
+    }
+
+    public void imprime(){
+        System.out.println(this.nome);
+        System.out.println(this.quantidade);
+        System.out.println(this.preco);
+    }
+
     public void setNome(String nome){
         this.nome = nome;
     }
