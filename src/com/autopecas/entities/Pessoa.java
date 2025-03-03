@@ -6,7 +6,11 @@ public class Pessoa {
     private String endereco;
     private long cpf;
 
-    public void init(String nome, String endereco, long cpf){
+    public Pessoa(){
+
+    }
+
+    public Pessoa(String nome, String endereco, long cpf){
         this.nome = nome;
         this.endereco = endereco;
         this.cpf = cpf;

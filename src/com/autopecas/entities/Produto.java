@@ -5,17 +5,28 @@ public class Produto {
     private String nome;
     private int quantidade;
     private double preco;
+    private String garantia;
 
-    public void init(String nome, int quantidade, double preco){
+    public Produto(){
+
+    }
+
+    public Produto(String nome, int quantidade, double preco){
         this.nome = nome;
         this.quantidade = quantidade;
         this.preco = preco;
     }
+    
+    public Produto(String nome, int quantidade, double preco, String garantia){
+        this(nome, quantidade, preco);
+        this.garantia = garantia;
+    }
+
 
     public void imprime(){
-        System.out.println(this.nome);
-        System.out.println(this.quantidade);
-        System.out.println(this.preco);
+        System.out.println("Nome do produto: " +this.nome);
+        System.out.println("Quantidade: " +this.quantidade);
+        System.out.println("Preço: R$" +this.preco);
     }
 
     public void setNome(String nome){
