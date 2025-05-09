@@ -24,7 +24,7 @@ public class Program {
         product.setQuantity(quantity);
         product.setPrice(price);
 
-        product.show();
+        System.out.println(product);
 
     }
 

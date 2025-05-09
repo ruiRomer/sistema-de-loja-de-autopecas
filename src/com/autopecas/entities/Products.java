@@ -22,15 +22,6 @@ public class Products {
         this.warranty = warranty;
     }
 
-
-    public void show(){
-        System.out.println("-------------------------");
-        System.out.println("Nome do produto: " +this.name);
-        System.out.println("Quantidade: " +this.quantity);
-        System.out.println("Preço: R$" +this.price);
-        System.out.println("Valor em estoque: R$"+ totalValueInStock());
-    }
-
     public void setName(String name){
         this.name = name;
     }
@@ -61,5 +52,13 @@ public class Products {
 
     public double discount(double percentage){
         return percentage * this.price;
+    }
+
+    @Override
+    public String toString(){
+        return "Nome do produto: " +this.name+
+        "\nQuantidade: " +this.quantity+
+        "\nPreço: R$" +this.price+
+        "\nValor em estoque: R$"+ totalValueInStock();
     }
 }
