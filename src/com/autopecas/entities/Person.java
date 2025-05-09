@@ -2,9 +2,9 @@ package com.autopecas.entities;
 
 public class Person {
 
-    private String name;
-    private String adress;
-    private long cpf;
+    protected String name;
+    protected String adress;
+    protected long cpf;
 
     public Person(){
 
