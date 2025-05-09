@@ -17,7 +17,7 @@ public class Program {
         System.out.print("Quantidade do produto para o estoque: ");
         int quantity = sc.nextInt();
 
-        System.out.print("Qual será o preço unitário do produto: ");
+        System.out.print("Qual será o preço unitário do produtoTeste: ");
         double price = sc.nextDouble();
 
         product.setName(name);
